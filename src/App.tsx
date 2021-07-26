@@ -1,4 +1,6 @@
 import React from 'react';
+// components
+import QuestionCard from './components/QuestionCard';
 
 function App() {
   // function that start when we start the quiz
@@ -23,6 +25,13 @@ function App() {
       <button className="start" onClick={startTrivia}>
         Start
       </button>
+      <p className="score">Score:</p>
+      <p>Loading questions ...</p>
+      <QuestionCard />
+      <button className="next" onClick={nextQuestion}>
+        Next Question
+      </button>
+
     </div>
   );
 }
