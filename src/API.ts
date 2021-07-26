@@ -20,6 +20,7 @@ export type Question = {
 
 // the purpose of this type is to put together the correct answer and the incorect answer, array of strings
 // in this way we add in Question a new key: value pair answers: string[] called QuestionsState
+// QuestionState includes Question and the new type for answer!!! check APP
 // we just add the TS not the actual value, the value is added in line 33
 export type QuestionsState = Question & { answers: string[] };
 
